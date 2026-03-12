@@ -75,7 +75,7 @@ export default function FlowContainer() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
       <ProgressBar current={state.currentChapter} total={TOTAL} />
-      <TopBar chapterIndex={state.currentChapter - 1} current={state.currentChapter} total={TOTAL} />
+      <TopBar chapterIndex={state.currentChapter - 1} />
 
       <div style={{ maxWidth: '780px', margin: '0 auto', padding: '96px clamp(20px, 5vw, 40px) 80px' }}>
         <AnimatePresence mode="wait" custom={state.direction}>

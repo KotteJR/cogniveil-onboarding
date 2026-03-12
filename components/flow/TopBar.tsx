@@ -5,12 +5,10 @@ import Image from 'next/image';
 
 interface TopBarProps {
   chapterIndex: number;
-  current: number;
-  total: number;
 }
 
 
-export default function TopBar({ chapterIndex, current, total }: TopBarProps) {
+export default function TopBar({ chapterIndex }: TopBarProps) {
   const chapter = CHAPTERS[chapterIndex];
 
   return (
@@ -35,19 +33,6 @@ export default function TopBar({ chapterIndex, current, total }: TopBarProps) {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Step counter */}
-      <div style={{
-        fontFamily: 'var(--cv-font-sans, system-ui)',
-        fontSize: '11px',
-        fontWeight: 500,
-        color: 'var(--text-muted)',
-        letterSpacing: '0.04em',
-        minWidth: '60px',
-        textAlign: 'right',
-      }}>
-        {current} / {total}
-      </div>
     </div>
   );
 }
