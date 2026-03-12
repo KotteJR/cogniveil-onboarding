@@ -175,15 +175,15 @@ export const DEPLOYMENT_MODE_OPTIONS: SelectOption[] = [
 ];
 
 export const POST_DEPLOYMENT_OPTIONS: SelectOption[] = [
-  { value: 'yes', label: 'Yes',  description: 'Dedicated support for building internal AI workflow tooling post-launch' },
-  { value: 'no',  label: 'No',   description: 'Team has sufficient internal capability to manage independently'         },
+  { value: 'yes', label: 'Yes',  description: 'Dedicated support is needed to build AI workflow tooling after launch' },
+  { value: 'no',  label: 'No',   description: 'Your team can manage post-launch workflow development independently'    },
   { value: 'tbd', label: 'TBD',  description: 'To be assessed after initial deployment and user adoption phase'        },
 ];
 
 export const TEAMS_BOT_OPTIONS: SelectOption[] = [
   { value: 'yes',   label: 'Yes',   description: 'CogniVeil embedded directly into Microsoft Teams as a bot'     },
   { value: 'no',    label: 'No',    description: 'Web-based access is sufficient'                                 },
-  { value: 'maybe', label: 'Maybe', description: 'Depends on internal Teams adoption and IT approval process'    },
+  { value: 'maybe', label: 'Maybe', description: 'Depends on Teams adoption and your IT approval process'         },
 ];
 
 // ─── Chapter 8 ────────────────────────────────────────────────────────────────
@@ -242,5 +242,5 @@ export const DEPLOYMENT_MODEL_OPTIONS: SelectOption[] = [
   },
 ];
 
-export const HYBRID_WARNING = 'This selection significantly impacts setup cost and timeline. Your sales engineer will discuss infrastructure requirements and cost implications in detail during the next call.';
-export const ONPREM_WARNING = 'On-Premise deployment requires dedicated infrastructure provisioning, security hardening, and extended implementation timelines. This will significantly affect project scope and pricing. Your sales engineer will discuss this in detail.';
+export const HYBRID_WARNING = 'This selection may increase implementation complexity, timeline, and cost. We will review infrastructure requirements and expected impact with you before kickoff.';
+export const ONPREM_WARNING = 'On-Premise deployment requires dedicated infrastructure, security hardening, and longer implementation timelines. This can significantly affect scope and pricing. We will review all requirements and implications with you before kickoff.';

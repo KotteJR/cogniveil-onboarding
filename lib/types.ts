@@ -1,4 +1,6 @@
 export interface Chapter1Answers {
+  companyName: string;
+  pointOfContact: string;
   industries: string[];
   industryOther: string;
   departments: string[];
@@ -78,7 +80,7 @@ export interface FlowState {
 }
 
 export const defaultAnswers: FlowAnswers = {
-  chapter1: { industries: [], industryOther: '', departments: [], departmentOther: '' },
+  chapter1: { companyName: '', pointOfContact: '', industries: [], industryOther: '', departments: [], departmentOther: '' },
   chapter2: { totalUsers: 50, heavyUsers: 0, midUsers: 0, lightUsers: 0 },
   chapter3: { rbac: '', ssoProviders: [], ssoProviderOther: '', ssoIntegration: '' },
   chapter4: { kbSize: '', docFormats: [], docFormatOther: '', sourceType: '', integrationPlatforms: [], integrationPlatformOther: '' },

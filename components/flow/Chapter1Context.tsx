@@ -30,6 +30,37 @@ export default function Chapter1Context({ answers, updateAnswers }: Props) {
 
       <motion.div variants={stagger} initial="initial" animate="animate">
 
+        {/* Company details */}
+        <motion.div variants={fadeUp} style={{ marginBottom: '40px' }}>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '12px' }}>
+            <div>
+              <div className="q-label" style={{ marginBottom: '6px' }}>Company Name</div>
+              <input
+                type="text"
+                className="cv-text-input"
+                placeholder="Enter company name"
+                value={a.companyName}
+                onChange={e => set({ companyName: e.target.value })}
+              />
+            </div>
+            <div>
+              <div className="q-label" style={{ marginBottom: '6px' }}>Point of Contact</div>
+              <input
+                type="text"
+                className="cv-text-input"
+                placeholder="Full name"
+                value={a.pointOfContact}
+                onChange={e => set({ pointOfContact: e.target.value })}
+              />
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
+          <div className="q-divider" />
+        </motion.div>
+
         {/* Industry */}
         <motion.div variants={fadeUp} style={{ marginBottom: '40px' }}>
           <span className="q-label">Industry / Vertical</span>

@@ -34,9 +34,11 @@ export function getChapterProgress(chapter: number, answers: FlowAnswers): Chapt
   switch (chapter) {
     case 1: {
       const a = answers.chapter1;
-      const answered = Number(hasSelection(a.industries, a.industryOther))
+      const answered = Number(hasText(a.companyName))
+        + Number(hasText(a.pointOfContact))
+        + Number(hasSelection(a.industries, a.industryOther))
         + Number(hasSelection(a.departments, a.departmentOther));
-      return normalizeProgress(answered, 2);
+      return normalizeProgress(answered, 4);
     }
     case 2: {
       const a = answers.chapter2;

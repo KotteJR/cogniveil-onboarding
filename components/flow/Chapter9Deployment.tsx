@@ -81,7 +81,7 @@ export default function Chapter9Deployment({ answers, updateAnswers }: Props) {
                 style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}
                 onClick={() => set({ deploymentModel: opt.value as typeof a.deploymentModel })}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '14px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '14px', width: '100%' }}>
                   <div style={{
                     color: a.deploymentModel === opt.value ? 'var(--accent)' : 'var(--text-muted)',
                     transition: 'color 200ms',

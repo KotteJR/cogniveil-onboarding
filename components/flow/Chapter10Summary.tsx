@@ -179,6 +179,8 @@ export default function Chapter10Summary({ answers, onBack, onReset }: Props) {
 
         <motion.div variants={fadeUp}>
           <SummarySection num="01" title="Context" rows={[
+            { key: 'Company Name',         value: c1.companyName },
+            { key: 'Point of Contact',     value: c1.pointOfContact },
             { key: 'Industry / Vertical',   value: [...c1.industries, ...(c1.industryOther ? [`Other: ${c1.industryOther}`] : [])] },
             { key: 'Department / Function', value: [...c1.departments, ...(c1.departmentOther ? [`Other: ${c1.departmentOther}`] : [])] },
           ]} />
